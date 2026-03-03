@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Next.js
+web-app/.next/
+web-app/out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
+
+# fly.io
+.fly/
+
+# Logs
+*.log
+npm-debug.log*
+.next/cache/
