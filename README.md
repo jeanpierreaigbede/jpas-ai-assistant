@@ -17,6 +17,7 @@ assistant_ai/
 │   └── fly.toml       # Déploiement fly.io
 │
 ├── web-app/           # Interface Next.js (React)
+│   ├── Dockerfile     # Déploiement Render / Docker
 │   ├── pages/         # Pages et composants
 │   ├── components/
 │   └── package.json
@@ -91,8 +92,10 @@ L'interface est disponible sur `http://localhost:3000`
 
 ## Déploiement
 
-- **Backend :** fly.io — voir `backend/README.md` et `fly.toml`
-- **Web-app :** Vercel — configuré via `vercel.json` (root: `web-app`)
+- **Backend :** fly.io ou Render — voir `backend/README.md` et `fly.toml`
+- **Web-app :**
+  - **Vercel** — configuré via `vercel.json` (root: `web-app`)
+  - **Render** — utiliser `web-app/Dockerfile` avec Root Directory = `web-app`, et définir `NEXT_PUBLIC_API_BASE` (URL de l’API backend)
 
 ---
 
