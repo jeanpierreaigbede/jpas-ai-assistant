@@ -13,16 +13,14 @@ assistant_ai/
 ├── backend/           # API FastAPI (Python)
 │   ├── main.py        # Point d'entrée et routes
 │   ├── requirements.txt
-│   ├── Dockerfile
-│   └── fly.toml       # Déploiement fly.io
+│   └── Dockerfile
 │
 ├── web-app/           # Interface Next.js (React)
-│   ├── Dockerfile     # Déploiement Render / Docker
+│   ├── Dockerfile     # Déploiement Docker
 │   ├── pages/         # Pages et composants
 │   ├── components/
 │   └── package.json
 │
-├── vercel.json        # Déploiement Vercel (web-app)
 └── README.md
 ```
 
@@ -92,10 +90,8 @@ L'interface est disponible sur `http://localhost:3000`
 
 ## Déploiement
 
-- **Backend :** fly.io ou Render — voir `backend/README.md` et `fly.toml`
-- **Web-app :**
-  - **Vercel** — configuré via `vercel.json` (root: `web-app`)
-  - **Render** — utiliser `web-app/Dockerfile` avec Root Directory = `web-app`, et définir `NEXT_PUBLIC_API_BASE` (URL de l’API backend)
+- **Backend :** Render — voir `backend/README.md`
+- **Web-app :** Render — utiliser `web-app/Dockerfile` avec Root Directory = `web-app`, et définir `NEXT_PUBLIC_API_BASE` (URL de l'API backend)
 
 ---
 
